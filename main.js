@@ -68,10 +68,19 @@ document.getElementById('answer3').innerHTML = currency[0].title + ' costs £' +
 
 // Answer 4---->
 
+//selects the items with wood in their description 
 
+var wooden = items.filter(function (wood){
+  return wood.materials.indexOf('wood') != -1;
+}); console.log (wooden);
 
-
-
+// Display on page 
+document.getElementById('answer4').innerHTML = 
+  wooden[0].title + ' is made of wood.' + '<br />' +
+  wooden[1].title + ' is made of wood.' + '<br />' +
+  wooden[2].title + ' is made of wood.' + '<br />' +
+  wooden[3].title + ' is made of wood.' + '<br />' +
+  wooden[4].title + ' is made of wood.';
 
 // Answer 5 
 
