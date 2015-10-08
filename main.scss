@@ -1,0 +1,62 @@
+$colorBody: #EEEEEE;
+$colorFooter: #4B494F;
+$colorBodyText: #555555;
+$colorFooterText: #8F8E8F;
+
+$lineBoxWidth: 30em;
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+img {
+  width: 100%;
+}
+
+header {
+  font-size: 2em;
+  padding: 15px 50px;
+  font-weight: 100;
+}
+
+h2 {
+  margin: 0;
+  padding: 1.5em 0 1em 0;
+  font-size: 2.5em;
+  font-weight: 100;
+  display: inline-block;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 5em 0;
+}
+
+div {
+  text-align: center;
+  background-color: $colorBody;
+  .box-top {
+    border-bottom: 1px solid lighten($colorBodyText, 50%);
+    display: inherit;
+    margin: 0px;
+    padding: 0 1em 0 1em;
+    display: inline-block;
+    width: $lineBoxWidth;
+    margin: .8em;
+  }
+  .box-bottom {
+    border-bottom: 1px solid lighten($colorBodyText, 50%);
+    display: inherit;
+    margin: 0px;
+    padding: 0 1em 0 1em;
+    display: inline-block;
+    width: $lineBoxWidth;
+    margin: .8em;
+  }
+}
+
+footer {
+  background-color: $colorFooter;
+  padding: 6em 0 1em 0;
+  text-align: center;
+  color: $colorFooterText;
+}
