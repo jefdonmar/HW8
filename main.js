@@ -1,15 +1,16 @@
-function (){
 
 // Answer 1------>
 //Makes an array of the prices 
 var prices = items.map(function (item){
   return item.price;
-}) console.log(prices);
+})
+ console.log(prices);
 
 //adds the prices up 
 var sum = prices.reduce(function (first, last){
    return first + last; 
-}) console.log(sum);
+}) 
+console.log(sum);
 
 //does the averages of the prices
 var avg = sum/ prices.length;
@@ -37,7 +38,8 @@ answer1.appendChild(textNode);
 //selects items with these specific prices  
 var itemprice = items.filter (function (item){
   return item.price > 14 && item.price <18;
-}) console.log(itemprice);
+}) 
+console.log(itemprice);
 
 //var for the array of these times 
 var itemArray = []
@@ -60,7 +62,8 @@ answer2.appendChild(textNode2);
 //selects items with the GBP code 
 var currency = items.filter (function(code){
   return code.currency_code==='GBP';
-}); console.log(currency);
+});
+ console.log(currency);
 
 //displays it on the screen 
 document.getElementById('answer3').innerHTML = currency[0].title + ' costs £' +  currency[0].price;
@@ -82,8 +85,40 @@ document.getElementById('answer4').innerHTML =
   wooden[3].title + ' is made of wood.' + '<br />' +
   wooden[4].title + ' is made of wood.';
 
-// Answer 5 
+// Answer 5---->
+// Filter out all objects with the array material with 8 items or more.
+var eightmat = items.filter(function (mats) {
+  return  mats.materials.length >= 8;
+});
 
+console.log(eightmat);
+
+// Display on page using innerHTML to change HTML content
+document.getElementById('answer5').innerHTML = 
+  eightmat[0].title + ' has ' + eightmat[0].materials.length + ' materials: ' + '<br />' + 
+    eightmat[0].materials[0] + '<br />' + 
+    eightmat[0].materials[1] + '<br />' + 
+    eightmat[0].materials[2] + '<br />' + 
+    eightmat[0].materials[3] + '<br />' +
+    eightmat[0].materials[4] + '<br />' +
+    eightmat[0].materials[5] + '<br />' +
+    eightmat[0].materials[6] + '<br />' +
+    eightmat[0].materials[7] + '<br />' +
+    eightmat[0].materials[8] + '<br />' + '<br />' +
+  eightmat[1].title + ' has ' + eightmat[1].materials.length + ' materials: ' + '<br />' + '<br />' + 
+    eightmat[1].materials[0] + '<br />' + 
+    eightmat[1].materials[1] + '<br />' + 
+    eightmat[1].materials[2] + '<br />' + 
+    eightmat[1].materials[3] + '<br />' +
+    eightmat[1].materials[4] + '<br />' +
+    eightmat[1].materials[5] + '<br />' +
+    eightmat[1].materials[6] + '<br />' +
+    eightmat[1].materials[7] + '<br />' +
+    eightmat[1].materials[8] + '<br />' +
+    eightmat[1].materials[9] + '<br />' +
+    eightmat[1].materials[10] + '<br />' +
+    eightmat[1].materials[11] + '<br />' +
+    eightmat[1].materials[12] + '<br />';
 
 
 
@@ -91,5 +126,3 @@ document.getElementById('answer4').innerHTML =
 
 
 
-
-}
