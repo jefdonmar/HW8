@@ -1,9 +1,10 @@
+/*Sooo... I didn't leard how to use this and took some advice here but would love to learn how to use this sass fille correctly */
+
 $colorBody: #EEEEEE;
 $colorFooter: #4B494F;
 $colorBodyText: #555555;
 $colorFooterText: #8F8E8F;
 
-$lineBoxWidth: 30em;
 
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -41,7 +42,7 @@ div {
     margin: 0px;
     padding: 0 1em 0 1em;
     display: inline-block;
-    width: $lineBoxWidth;
+    width: 300px;
     margin: .8em;
   }
   .box-bottom {
@@ -50,7 +51,7 @@ div {
     margin: 0px;
     padding: 0 1em 0 1em;
     display: inline-block;
-    width: $lineBoxWidth;
+    width: 300px;
     margin: .8em;
   }
 }

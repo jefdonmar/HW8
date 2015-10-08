@@ -29,7 +29,7 @@ div {
     margin: 0px;
     padding: 0 1em 0 1em;
     display: inline-block;
-    width: 30em;
+    width: 300px;
     margin: .8em; }
   div .box-bottom {
     border-bottom: 1px solid #d4d4d4;
@@ -37,7 +37,7 @@ div {
     margin: 0px;
     padding: 0 1em 0 1em;
     display: inline-block;
-    width: 30em;
+    width: 300px;
     margin: .8em; }
 
 footer {

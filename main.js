@@ -86,14 +86,14 @@ document.getElementById('answer4').innerHTML =
   wooden[4].title + ' is made of wood.';
 
 // Answer 5---->
-// Filter out all objects with the array material with 8 items or more.
+// Filter out all objects with 8 items or more.
 var eightmat = items.filter(function (mats) {
   return  mats.materials.length >= 8;
 });
 
 console.log(eightmat);
 
-// Display on page using innerHTML to change HTML content
+// Display on page 
 document.getElementById('answer5').innerHTML = 
   eightmat[0].title + ' has ' + eightmat[0].materials.length + ' materials: ' + '<br />' + 
     eightmat[0].materials[0] + '<br />' + 
@@ -120,9 +120,14 @@ document.getElementById('answer5').innerHTML =
     eightmat[1].materials[11] + '<br />' +
     eightmat[1].materials[12] + '<br />';
 
+// Answer 6---->
+var sellermade = items.filter(function (seller) {
+  return seller.who_made === 'i_did';
+});
+console.log(sellermade);
 
-
-// Answer 6 
+// Display on page 
+document.getElementById('answer6').innerHTML = sellermade.length + ' were made by their sellers'; 
 
 
 
