@@ -55,13 +55,19 @@ var answer2 = document.querySelector('#answer2');
 var textNode2 = document.createTextNode(str2);
 answer2.appendChild(textNode2);
 
-// Answer 3 
+// Answer 3------->
+
+//selects items with the GBP code 
+var currency = items.filter (function(code){
+  return code.currency_code==='GBP';
+}); console.log(currency);
+
+//displays it on the screen 
+document.getElementById('answer3').innerHTML = currency[0].title + ' costs £' +  currency[0].price;
 
 
+// Answer 4---->
 
-
-
-// Answer 4
 
 
 
