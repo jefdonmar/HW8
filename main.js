@@ -1,6 +1,6 @@
 function (){
 
-// Answer 1
+// Answer 1------>
 //Makes an array of the prices 
 var prices = items.map(function (item){
   return item.price;
@@ -32,12 +32,28 @@ var textNode = document.createTextNode(str);
 //Puts the answer within our page
 answer1.appendChild(textNode);
 
+// Answer 2----------->
 
-// Answer 2
+//selects items with these specific prices  
+var itemprice = items.filter (function (item){
+  return item.price > 14 && item.price <18;
+}) console.log(itemprice);
 
+//var for the array of these times 
+var itemArray = []
 
+//puts filtered items in the array 
+itemprice.forEach(function(item2){
+  itemArray.push(item2.title);
+  console.log (itemprice);
+}); 
 
-
+//Displays those Items on the Screen
+var str2 = itemArray;
+console.log(str2);
+var answer2 = document.querySelector('#answer2');
+var textNode2 = document.createTextNode(str2);
+answer2.appendChild(textNode2);
 
 // Answer 3 
 

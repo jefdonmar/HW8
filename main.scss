@@ -35,7 +35,8 @@ div {
   text-align: center;
   background-color: $colorBody;
   .box-top {
-    border-bottom: 1px solid lighten($colorBodyText, 50%);
+    border-bottom: 1px solid light
+    en($colorBodyText, 50%);
     display: inherit;
     margin: 0px;
     padding: 0 1em 0 1em;
